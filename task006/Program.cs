@@ -8,8 +8,8 @@
 int num = new Random().Next(100, 1000);
 Console.WriteLine($"Случайное число из диапазона 100 - 999 -> {num}");
 
-int firstDigit = num / 100; // 78 / 10 = 7
-int secondDigit = num % 10; // 78 % 10 = 8
+int firstDigit = num / 100; 
+int secondDigit = num % 10; 
 
 int number = firstDigit*10+secondDigit;
 
