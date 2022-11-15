@@ -34,8 +34,17 @@ int[] CopyArray(int[] array)
     return copyArray;
 }
 
+Console.WriteLine("Введите размер массива: ");
+int size = Convert.ToInt32(Console.ReadLine());
 
-int[] arr = CreateArrayRndInt(12, -9, 9);
+Console.WriteLine("Введите минимальное значение чесел массива: ");
+int min = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine("Введите максимальное значение чесел массива: ");
+int max = Convert.ToInt32(Console.ReadLine());
+
+
+int[] arr = CreateArrayRndInt(size, min, max);
 PrintArray(arr);
 int[] arrCopy = CopyArray(arr);
 PrintArray(arrCopy);
