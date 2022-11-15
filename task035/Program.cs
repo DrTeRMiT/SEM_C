@@ -30,7 +30,7 @@ int GetCount(int[] array)
     int count = 0;
     for (int i = 0; i < array.Length; i++)
     {
-        if (array[i] >= 10 && array[i]<=99) count++;
+        if (array[i] >= 10 && array[i] <= 99) count++;
     }
     return count;
 }
@@ -41,3 +41,17 @@ int[] arr = CreateArrayRndInt(123, 0, 200);
 
 int getCount = GetCount(arr);
 Console.WriteLine($"Количество элементов массива, значения которых лежат в отрезке [10, 99] = {getCount}");
+
+// возвращение псевдослуч чисел
+
+// double[] CreateArrayRndDouble(int size, int min, int max)
+// {
+//     double[] array = new double[size];
+//     Random rnd = new Random();
+//     for (int i = 0; i < size; i++)
+//     {
+//         double num = rnd.NextDouble() * (max - min) + min;
+//         array[i] = Math.Round(num, 1);
+//     }
+//     return array;
+// }

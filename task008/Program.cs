@@ -1,4 +1,4 @@
-﻿// Задача 10: Напишите программу, которая принимает на вход трёхзначное число и 
+// Задача 10: Напишите программу, которая принимает на вход трёхзначное число и 
 // на выходе показывает вторую цифру этого числа.
 
 // 456 -> 5
@@ -11,4 +11,4 @@ int num = Convert.ToInt32(Console.ReadLine());
 int firstDigit = num / 10; 
 int secondDigit = firstDigit % 10; 
 
-Console.WriteLine(secondDigit);
+Console.WriteLine(secondDigit);   
